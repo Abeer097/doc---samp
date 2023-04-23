@@ -166,4 +166,45 @@
 - ( คุณสามารถแจกจ่ายไฟล์ Setup.exe ผู้เล่นคนอื่นๆได้แล้ว )
 ![alt text](https://i.imgur.com/e0Icc6q.png)
 
-### ตั้งค่าโปรเจค Auto Update
+### เตรียมไฟล์สำหรับ Update
+(ไฟล์ทุกอย่างที่อยู่ใน launcher.zip จะถูกอัพเดตให้ผู้เล่น)
+- เข้าไปที่ Path `C:\SAMPLauncherWebView2\FilesBuild_Launcher_for_UPDATE_Pack\launcher`
+- (Option) หากต้องการอัพเดตไฟล์เกม หรือไฟล์ต่างๆที่เกี่ยวกับตัวเกม ให้เข้าไปในโฟลเดอร์ `gamefiles` และจัดการในสิ่งที่คุณจะทำ
+![alt text](https://i.imgur.com/ZzuSPxy.png)
+- (Option) หากต้องการแก้ไขโค้ดโปรแกรมให้เข้าไปที่ Path `C:\SAMPLauncherWebView2\` และเปิดไฟล์ `KC_Start_LauncherV2.sln` ด้วยโปรแกรม Visual Studio 2022 และจัดการในสิ่งที่คุณจะทำ
+![alt text](https://i.imgur.com/e1KNiff.png)
+- เมื่อจัดการเสร็จสิ้น ให้เข้าไปที่ Path `C:\SAMPLauncherWebView2\FilesBuild_Launcher_for_UPDATE_Pack`
+![alt text](https://i.imgur.com/dpTaxmS.png)
+- ให้คลิ๊กขวาที่โฟลเดอร์ `launcher` และบีบอัดเป็นไฟล์ ZIP
+![alt text](https://i.imgur.com/ELKfRIZ.png)
+- เมื่อรอจนบีบอัดเป็นไฟล์ ZIP เสร็จ คุณจะได้ไฟล์ `launcher.zip` มา 1 ไฟล์
+![alt text](https://i.imgur.com/tmNhY88.png)
+- เข้าไปที่เครื่อง Server VPS
+- ให้คัดลอกไฟล์ `launcher.zip`
+![alt text](https://i.imgur.com/oC1Kavu.png)
+- ให้เข้าไปที่ Path `C:\xampp\htdocs\SAMPLauncherWebView2_API\file_update` บนเครื่อง Server VPS และวางไฟล์ `launcher.zip` ลงใน โฟลเดอร์ `file_update`
+![alt text](https://i.imgur.com/evImYl1.png)
+
+### ตั้งค่าระบบ Auto Update
+- เปิดหน้าเว็บ https://emn178.github.io/online-tools/md5_checksum.html
+- คลิ๊กที่ข้อความ Drop File Here Path
+- ให้ใส่ที่อยู่ `C:\SAMPLauncherWebView2\FilesBuild_Launcher_for_UPDATE_Pack\launcher\` และกดปุ่ม ENTER
+![alt text](https://i.imgur.com/C4u0N9R.png)
+- กดที่ปุ่ม Open และหน้าเว็บจะแสดง MD5 ของไฟล์ ให้ทำการคัดลอก MD5 ของไฟล์เก็บไว้
+![alt text](https://i.imgur.com/grrbfqW.png)
+- ให้เปิดโปรแกรม HeidiSQL ขึ้นมา และกด Open
+![alt text](https://i.imgur.com/t9cQmNj.png)
+- เข้าไปใน Database `samplauncherwebview2_db` -> Table `autoupdate_config` (หากไม่มี COLUMN ไดแสดง ให้กดที่แท็บ Data เพื่อแสดง COLUMN ทั้งหมด)
+- ให้ตั้งค่าฐานข้อมูลตามนี้
+
+| ชื่อ | คำอธิบาย     | ตัวอย่าง     |
+| :-------- | :------- | :------- |
+| `MD5Launcher` | `MD5 ไฟล์ _launcher.exe` | `นำ MD5 ของไฟล์ _launcher.exe ที่คัดลอกไว้มาใส่`  |
+| `URLForUpdateLauncher` | `ลิ้งค์ที่อยู่ไฟล์อัพเดต` | `http://ให้ใส่เลขที่อยู่_IP_เครื่อง_Server_VPS/SAMPLauncherWebView2_API/file_update/launcher.zip` |
+| `VersionLauncherCurrent` | `เวอร์ชั่นปัจจุบัน` | `2.0.0` |
+
+- (ระบบจะอัพเดตให้ผู้เล่น เมื่อออกและเข้าโปรแกรม Launcher ใหม้อีกครั้ง)
+![alt text](https://i.imgur.com/b5O9FUm.png)
+
+### หากเปิดปัญหา หรือติดปัญหา โปรดติดต่อผู้สร้างโปรแกรมนี้
+[ติดต่อฉัน](https://fujinons.web.app/contact/)
