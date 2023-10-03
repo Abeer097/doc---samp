@@ -64,8 +64,9 @@
 | ชื่อ | คำอธิบาย     | ตัวอย่าง     |
 | :-------- | :------- | :------- |
 | `Title` | `ชื่อ Launcher บนหน้าต่างโปรแกรม` | `SAMP Launcher Final Test` |
-| `Title name server` | `ชื่อ Server บนหน้าต่างโปรแกรม` | `F U J I N O - N S - R P` |
+| `Title name server` | `ชื่อ Server บนหน้าต่างโปรแกรม` | `test rp` |
 | `URL Discord` | `ลิ้งค์ Discord Server` | `https://discord.gg/39YvS7e` |
+| `URL facebook` | `ลิ้งค์ facebook` | `https://discord.gg/39YvS7e` |
 | `IP Server SAMP` | `ที่อยู่ IP Server` | `192.168.1.58` |
 | `Port Server SAMP` | `ที่อยู่ PORT Server` | `ต้องเป็น 7777 เท่านั้น` |
 | `Server Password` | `รหัสผ่าน Server` | `Fu*****Ns (หากไม่มี ให้ปล่อยว่าง)` |
