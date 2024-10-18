@@ -21,7 +21,6 @@
 - [ดาวน์โหลด WinRAR](https://www.win-rar.com/start.html?&L=0)
 ## การติดตั้งสำหรับ DEV
 
-- [การติดตั้ง Visual Studio 2022 Community](https://fujinons.web.app/howto/install-vs-2022.html)
 - การติดตั้ง Inno Setup - ทำการติดตั้งโปรแกรม Inno Setup บนเครื่อง PC ของคุณตามปกติ
 - การติดตั้ง Visual Studio Code - ทำการติดตั้งโปรแกรม Visual Studio Code บนเครื่อง PC ของคุณตามปกติ
 - การติดตั้ง WinRAR - ทำการติดตั้งโปรแกรม WinRAR บนเครื่อง PC ของคุณตามปกติ
@@ -216,10 +215,9 @@
 | :-------- | :------- | :------- |
 | `MyAppName` | `ชื่อโปรแกรม` | `SAMP_Launcher` |
 | `MyAppVersion` | `เวอร์ชั่นของโปรแกรม (ไม่มีผลกับระบบ Auto Update)` | `1.0.0` |
-| `MyAppPublisher` | `ชื่อเจ้าของ หรือ ผู้สร้าง` | `Fujino N's` |
+| `MyAppPublisher` | `ชื่อเจ้าของ หรือ ผู้สร้าง` | `ตามใจเรา` |
 | `MyAppIcon` | `ไอค่อนโปรแกรม` | `C:\SAMPLauncher\img\icon.ico` |
-| `MyAppURL` | `ลิงค์ติดต่อ หรือ ลิงค์โปรแกรม` | `https://fujinons.web.app/credit/` |
-| `MyFolderInstall` | `ชื่อโฟลเดอร์ในไดร์ C สำหรับติดตั้งไฟล์ Launcher` | `FujinoNs` |
+| `MyFolderInstall` | `ชื่อโฟลเดอร์ในไดร์ C สำหรับติดตั้งไฟล์ Launcher` | `แล้วแต่เราจะตั้ง` |
 
 - เมื่อตั้งค่าเสร็จให้กดปุ่ม Ctrl+S ที่ Keyboard
 - กดปุ่ม Ctrl+F9 ที่ Keyboard
