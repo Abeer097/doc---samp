@@ -64,12 +64,12 @@
 | ชื่อ | คำอธิบาย     | ตัวอย่าง     |
 | :-------- | :------- | :------- |
 | `Title` | `ชื่อ Launcher บนหน้าต่างโปรแกรม` | `SAMP Launcher Final Test` |
-| `Title name server` | `ชื่อ Server บนหน้าต่างโปรแกรม` | `F U J I N O - N S - R P` |
+| `Title name server` | `ชื่อ Server บนหน้าต่างโปรแกรม` | `TEST- N S - R P` |
 | `URL Discord` | `ลิ้งค์ Discord Server` | `https://discord.gg/39YvS7e` |
 | `IP Server SAMP` | `ที่อยู่ IP Server` | `192.168.1.58` |
 | `Port Server SAMP` | `ที่อยู่ PORT Server` | `ต้องเป็น 7777 เท่านั้น` |
-| `Server Password` | `รหัสผ่าน Server` | `Fu*****Ns (หากไม่มี ให้ปล่อยว่าง)` |
-| `CRON Password` | `รหัสผ่าน CRON Server` | `Fu*****Ns (หากไม่มี ให้ปล่อยว่าง)` |
+| `Server Password` | `รหัสผ่าน Server` | `AU*****Ns (หากไม่มี ให้ปล่อยว่าง)` |
+| `CRON Password` | `รหัสผ่าน CRON Server` | `AU*****Ns (หากไม่มี ให้ปล่อยว่าง)` |
 
 - ไปที่แท็บ `Discord RPC`
 - เข้าไปที่ `https://discord.com/developers/applications` และล็อกอินให้เรียบร้อย
